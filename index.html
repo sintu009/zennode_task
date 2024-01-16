@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css" class="">
+</head>
+
+<style>
+    header {
+        background-color: #3498db;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <a href="index.html">Task 1</a>
+        <a href="task2.html">Task 2</a>
+    </header>
+    <br>
+
+    <div class="container">
+        <div class="order-details">
+            <h1>Shopping Cart</h1>
+
+            <div>
+                <label for="quantityA">Product A Quantity:</label>
+                <input type="number" id="quantityA" min="0">
+            </div>
+
+            <div>
+                <label for="quantityB">Product B Quantity:</label>
+                <input type="number" id="quantityB" min="0">
+            </div>
+
+            <div>
+                <label for="quantityC">Product C Quantity:</label>
+                <input type="number" id="quantityC" min="0">
+            </div>
+
+            <button onclick="calculateCart()">Calculate</button>
+        </div>
+
+        <div class="gift-wrap-container">
+            <div class="gift-wrap">
+                <input type="checkbox" id="giftA">
+                <label for="giftA">Gift wrap Product A</label>
+            </div>
+            <div class="gift-wrap">
+                <input type="checkbox" id="giftB">
+                <label for="giftB">Gift wrap Product B</label>
+            </div>
+            <div class="gift-wrap">
+                <input type="checkbox" id="giftC">
+                <label for="giftC">Gift wrap Product C</label>
+            </div>
+        </div>
+
+        <div id="orderSummary"></div>
+    </div>
+</body>
+<script class="" src="script.js"></script>
+
+</html>
